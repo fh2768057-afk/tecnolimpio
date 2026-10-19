@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TecnoLimpio | Mantenimiento de computadoras</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaf2fb;
+            color: #222;
+        }
+
+        /* ENCABEZADO AZUL */
+        header {
+            background-color: #1764a5;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .logo {
+            width: 160px;
+            height: 160px;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        /* MENU */
+        nav {
+            background-color: #0878df;
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #cce2ff;
+        }
+
+        /* INICIO */
+        .inicio {
+            background-color: #dceafe;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .inicio h2 {
+            color: #1764a5;
+            font-size: 32px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .imagen-principal {
+            width: 100%;
+            max-width: 550px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        /* SECCIONES */
+        .contenido {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .contenido h2 {
+            color: #1764a5;
+            font-size: 28px;
+        }
+
+        .descripcion {
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* TARJETAS DE SERVICIOS */
+        .servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            color: #333;
+            width: 300px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #b8cce3;
+            transition: transform 0.2s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .tarjeta h3 {
+            color: #1764a5;
+        }
+
+        .tarjeta p {
+            line-height: 1.6;
+        }
+
+        /* CONTACTO */
+        .contacto {
+            background-color: #dceafe;
+        }
+
+        /* PIE DE PAGINA */
+        footer {
+            background-color: #123b68;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        /* AJUSTES PARA CELULARES */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .inicio h2 {
+                font-size: 26px;
+            }
+
+            .imagen-principal {
+                height: 220px;
+            }
+
+            .tarjeta {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y LOGO -->
+    <header>
+        <img
+            src="https://raw.githubusercontent.com/20005765-bit/imagenes/main/WhatsApp%20Image%202026-10-19%20at%209.28.47%20AM.jpeg"
+            alt="Logo de TecnoLimpio"
+            class="logo"
+        >
+
+        <h1>TecnoLimpio</h1>
+
+        <p>Limpieza y mantenimiento de computadoras</p>
+    </header>
+
+    <!-- MENU DE NAVEGACION -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <h2>¡Bienvenidos a TecnoLimpio!</h2>
+
+        <p>
+            Cuidamos tus computadoras con servicios de limpieza
+            y mantenimiento responsable.
+        </p>
+
+        <img
+            src="https://raw.githubusercontent.com/20005765-bit/imagenes/main/WhatsApp%20Image%202026-10-19%20at%209.27.57%20AM.jpeg"
+            alt="Imagen principal de TecnoLimpio"
+            class="imagen-principal"
+        >
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="contenido" id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+
+        <p class="descripcion">
+            Somos un emprendimiento dedicado a brindar servicios
+            de limpieza y mantenimiento preventivo de computadoras.
+            Ofrecemos un servicio de calidad, responsable y accesible
+            para ayudar a nuestros clientes a mantener sus equipos
+            en buenas condiciones.
+        </p>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="contenido" id="servicios">
+        <h2>Nuestros servicios</h2>
+
+        <p class="descripcion">
+            Ofrecemos servicios para contribuir al buen funcionamiento
+            y cuidado de las computadoras.
+        </p>
+
+        <div class="servicios">
+
+            <!-- SERVICIO 1 -->
+            <div class="tarjeta">
+                <img
+                    src="https://raw.githubusercontent.com/20005765-bit/imagenes/main/WhatsApp%20Image%202026-10-19%20at%209.27.52%20AM.jpeg"
+                    alt="Limpieza de computadoras"
+                >
+
+                <h3>Limpieza interna</h3>
+
+                <p>
+                    Eliminación del polvo acumulado en los componentes
+                    internos para contribuir a su cuidado.
+                </p>
+            </div>
+
+            <!-- SERVICIO 2 -->
+            <div class="tarjeta">
+                <img
+                    src="https://raw.githubusercontent.com/20005765-bit/imagenes/main/WhatsApp%20Image%202026-10-19%20at%209.27.53%20AM.jpeg"
+                    alt="Mantenimiento de computadoras"
+                >
+
+                <h3>Mantenimiento preventivo</h3>
+
+                <p>
+                    Revisión y limpieza periódica para ayudar a prevenir
+                    problemas y conservar el buen funcionamiento.
+                </p>
+            </div>
+
+            <!-- SERVICIO 3 -->
+            <div class="tarjeta">
+                <img
+                    src="https://raw.githubusercontent.com/20005765-bit/imagenes/main/WhatsApp%20Image%202026-10-19%20at%209.27.57%20AM.jpeg"
+                    alt="Servicio técnico de computadoras"
+                >
+
+                <h3>Mantenimiento correctivo</h3>
+
+                <p>
+                    Revisión de fallas para identificar problemas
+                    y determinar posibles soluciones.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contenido contacto" id="contacto">
+        <h2>Información del proyecto</h2>
+
+        <p><strong>Emprendimiento:</strong> TecnoLimpio</p>
+
+        <p><strong>Institución:</strong> Instituto Nacional de Ilobasco</p>
+
+        <p><strong>Grado:</strong> Primero "A" de Bachillerato ITSI</p>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p>© 2026 TecnoLimpio</p>
+        <p>Limpieza, cuidado y mantenimiento de computadoras.</p>
+    </footer>
+    <!-- CODIGO QR -->
+<section class="contenido qr">
+    <h2>Visita nuestra página web</h2>
+
+    <p>
+        Escanea el código QR para conocer más sobre
+        nuestro emprendimiento TecnoLimpio.
+    </p>
+
+    <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https%3A%2F%2F20005765-bit.github.io%2F"
+        alt="Código QR de TecnoLimpio"
+        class="codigo-qr"
+    >
+
+    <p>¡Gracias por visitar TecnoLimpio!</p>
+</section>
+
+</body>
+</html>
